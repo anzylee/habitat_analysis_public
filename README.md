@@ -14,6 +14,8 @@ You can change the directories in the python script. Outputs are 'hsi_depth.tif'
 #### 2. calculate_habitat_area_composite.py
 This script calculates the habitat area whose HSI is greater than a certain threshold, which is defined in the code. Output is 'habitat-area.shp' (habitat area polygon) in 'habitat_composite_XX' folder where XX denotes the percentile value.
 
+-----
+
 ### Python Programming for Water Resources Engineering and Research
 
 ![fish](https://github.com/Ecohydraulics/media/raw/master/jpg/yuba-fish.jpg)
