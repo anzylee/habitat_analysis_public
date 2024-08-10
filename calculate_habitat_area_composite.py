@@ -48,14 +48,14 @@ def main():
     # extract pixels where the physical habitat quality is higher than the user threshold value
     habitat_pixels = np.greater_equal(chsi_raster.array, chsi_threshold) * 1
     # write the habitat pixels to a binary array (0 -> no habitat, 1 -> usable habitat)
-    geo.create_raster(os.path.abspath("") + "\\habitat\\habitat-pixels.tif",
+    geo.create_raster(hsi_output_dir + "habitat-pixels.tif",
                       raster_array=habitat_pixels,
                       #epsg=chsi_raster.epsg,
                       geo_info=chsi_raster.geo_transformation) #(create habitat pixels raster)
 
     # convert the raster with usable pixels to polygon (must be an integer raster!)
-    tar_shp_file_name = os.path.abspath("") + "\\habitat\\habitat-area.shp"
-    habitat_polygons = geo.raster2polygon(os.path.abspath("") + "\\habitat\\habitat-pixels.tif",
+    tar_shp_file_name = hsi_output_dir + "habitat-area.shp"
+    habitat_polygons = geo.raster2polygon(hsi_output_dir + "habitat-pixels.tif",
                                           tar_shp_file_name)
 
     # calculate the habitat area (will be written to the attribute table)
