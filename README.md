@@ -1,7 +1,7 @@
 ## Habitat analysis using composite habitat suitability curves
 
 ### Background
-A set of python codes were developed to perform habitat analysis using composite habitat suitability curves with different percentile vales. The main python scripts and functions are based on this [Ecohydraulics repo](https://github.com/Ecohydraulics/Exercise-geco) and the in-depth description can be found in 'Python Programming for Water Resources Engineering and Research' below.
+A set of python codes was developed to perform habitat analysis using composite habitat suitability curves with different percentile vales. The main python scripts and functions are based on this [Ecohydraulics repo](https://github.com/Ecohydraulics/Exercise-geco) and the in-depth description can be found in 'Python Programming for Water Resources Engineering and Research' below.
 
 ### Usage
 This toolset is composed of two main python scripts.
